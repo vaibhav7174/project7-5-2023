@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F3 Project Landing Page</title>
+    <link rel="stylesheet" href="landingpage.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+</head>
+
+<body>
+    <header>
+        <h2 class="logo">Sasta Amazon</h2>
+        <nav class="navbar">
+            <a class="home" href="#">Home</a>
+            <a class="profile" href="#">My Profile</a>
+            <a class="myCart" href="#">My Cart</a>
+            <a class="logout" href="#">Logout</a>
+        </nav>
+    </header>
+    <div class="my-container">
+        <div class="left">
+            <div class="rating">
+                <h3>Filter items</h3>
+                <h4>Rating</h4>
+                <input type="range" min="0" max="5" value="0" class="slider" id="myRange">
+                <div class="num">
+                    <div>Default</div>
+                    <div>5</div>
+                </div>
+            </div>
+            <div class="price-range">
+                <h4>Price</h4>
+                <div class="product-price">
+                    <label for=""><input id="checkbox0" type="checkbox"> $0 to $25</label>
+                    <label for=""><input id="checkbox25" type="checkbox"> $25 to $50</label>
+                    <label for=""><input id="checkbox50" type="checkbox"> $50 to $100</label>
+                    <label for=""><input id="checkbox100" type="checkbox"> $100 onwards</label>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div id="snackbar">Item is added to your cart!!</div>
+            <div class="search">
+                <button class="btn-search"><i class="fas fa-search"></i></button>
+                <input type="text" class="input-search" placeholder="Search">
+            </div>
+            <div class="categories">
+                <p class="selectCategories" id="all">All</p>
+                <p class="selectCategories" id="mens">Mens</p>
+                <p class="selectCategories" id="womens">Womens</p>
+                <p class="selectCategories" id="jewellery">Jewellery</p>
+                <p class="selectCategories" id="electronics">Electronics</p>
+            </div>
+            <div class="mens-clothing clothings">
+                <h4>Men's Clothings</h4>
+                <div class="men-card-wrapper wrapper"></div>
+            </div>
+            <div class="womens-clothing clothings">
+                <h4>Women's Clothings</h4>
+                <div class="women-card-wrapper wrapper"></div>
+            </div>
+            <div class="jewellery clothings">
+                <h4>Jewellery</h4>
+                <div class="jewellery-card-wrapper wrapper"></div>
+            </div>
+            <div class="electronics clothings">
+                <h4>Electronics</h4>
+                <div class="electronics-card-wrapper wrapper"></div>
+            </div>
+        </div>
+    </div>
+    <script src="landingpage.js"></script>
+</body>
+
+</html>

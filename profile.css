@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    background: linear-gradient(to top, #c4c5c7 0%, #dcdddf 52%, #ebebeb 100%) no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #162938;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 70px;
+    background-color: #162938;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.5rem;
+    color: #fff;
+    user-select: none;
+}
+
+.navbar a {
+    position: relative;
+    font-size: 1.1rem;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+.navbar a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+.navbar a:hover::after{
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.container{
+    width: 100%;
+    padding: 100px 0 0 0;
+    text-align: center;
+}
+h3{
+    padding: 10px 0 10px 0;
+}
+button{
+    background-color: #162938;
+    color: #fff;
+    padding: 8px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor:pointer;
+}
+.changePassword{
+    margin: 20px 0 0 0;
+    width: 100%;
+    text-align: center;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+#change, #logout{
+    width: 100px;
+}
+form input{
+    width: 300px;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 10px;
+    border: 1px solid #c4c5c7;;
+}
+
+.hide{
+    display:none;
+}
+.notification{
+    color: #008000;
+}
+
+.form-text{
+    color: #ff0000;
+}
